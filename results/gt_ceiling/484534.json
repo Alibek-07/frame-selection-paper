@@ -1,0 +1,24 @@
+{
+  "visit_id": "484534",
+  "n_points": 715010,
+  "floor_z": -102.199,
+  "ceiling_z": -99.834,
+  "ceiling_height_m": 2.365,
+  "manhattan_angle_deg": 78.5,
+  "obb_length_m": 4.563,
+  "obb_width_m": 3.636,
+  "floor_area_m2": 13.878,
+  "obb_area_m2": 16.591,
+  "irregularity": 0.8364,
+  "n_floor_cells": 5551,
+  "n_components": 7,
+  "params": {
+    "cell": 0.05,
+    "floor_band": [
+      2.25,
+      2.5
+    ],
+    "close_cells": 4,
+    "method": "floor_footprint"
+  }
+}
