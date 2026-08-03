@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.ply
+*.zip
+*.mov
+data/
