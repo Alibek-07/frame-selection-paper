@@ -151,7 +151,7 @@ def select_random(feats, K, seed=0):
 
 
 def select_sharpness_topk(feats, K, seed=0):
-    return sorted(feats.nlargest(K, "sharpness")["frame_idx"].tolist())
+    return sorted(feats.nlargest(K, "sharpness").index.tolist())
 
 
 def select_coverage(feats, K, seed=0, pool=None):
