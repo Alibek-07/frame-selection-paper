@@ -337,10 +337,16 @@ class MapAnythingPipeline:
         cams = P[:, :3, 3]
         traj = (cams.max(0) - cams.min(0))
 
-        if not (1.0 < L < 30.0 and 1.0 < W < 30.0):
-            return {"success": False, "error": f"implausible extents {L:.2f}x{W:.2f}"}
+        # Never discard a reconstruction: an arbitrary plausibility threshold
+        # silently drops the worst runs and understates the penalty. Instead
+        # always report dimensions and flag degeneracy with a pre-registered,
+        # geometrically motivated rule: real rooms are not 4:1 slivers, and a
+        # habitable dimension is >1.2 m.
+        degenerate = bool(W < 1.2 or (L / max(W, 1e-6)) > 4.0)
 
-        return {"success": True, "dimensions": (L, W),
+        return {"success": True, "degenerate": degenerate,
+                "aspect": float(L / max(W, 1e-6)),
+                "dimensions": (L, W),
                 "ceiling_height_m": H, "n_points": int(len(allpts)),
                 "mean_conf": float(np.mean(np.concatenate(confs))) if confs else None,
                 "gravity_tilt_deg": tilt,

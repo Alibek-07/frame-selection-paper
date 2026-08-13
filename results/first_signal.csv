@@ -1,0 +1,6 @@
+strategy,L,W,h,err_vs_ref,conf,secs,angular_coverage,direction_entropy,max_angular_gap,mean_baseline,mean_adjacent_rotation,mean_sharpness
+uniform,3.84,3.75,2.47,0.0277,0.436,2,0.361,0.701,1.244,0.38,1.493,0.181
+random,3.71,3.42,2.66,0.0507,0.514,2,0.361,0.701,2.596,0.317,0.95,0.194
+sharpness,2.69,1.27,2.62,0.4796,0.764,2,0.194,0.435,3.35,0.324,0.272,0.57
+coverage,5.31,3.45,1.84,0.2025,0.273,2,0.444,0.774,0.434,0.406,1.186,0.085
+coverage_fps,4.53,3.92,2.7,0.1238,0.34,2,0.444,0.774,0.536,0.406,1.099,0.102

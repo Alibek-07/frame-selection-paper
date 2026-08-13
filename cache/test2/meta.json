@@ -1,0 +1,9 @@
+{
+  "video": "data/test2.MOV",
+  "pool_size": 200,
+  "yaw_stride": 3,
+  "raw_yaw_span_rad": 14.19693969481716,
+  "yaw_normalised": false,
+  "nominal_hfov_deg": 65.0,
+  "angular_velocity_var": 0.005436724057801935
+}

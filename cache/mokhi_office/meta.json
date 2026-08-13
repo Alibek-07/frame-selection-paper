@@ -1,0 +1,9 @@
+{
+  "video": "data/mokhi_office.MOV",
+  "pool_size": 200,
+  "yaw_stride": 3,
+  "raw_yaw_span_rad": 8.924101180517287,
+  "yaw_normalised": false,
+  "nominal_hfov_deg": 65.0,
+  "angular_velocity_var": 0.0007183022378490951
+}

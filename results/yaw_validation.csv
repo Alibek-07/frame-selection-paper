@@ -1,0 +1,6 @@
+capture,span_flow_deg,span_pred_deg,rms_deg,pearson_r,sign
+hikmatollah_apt,526.1,394.8,57.7,0.986,-1
+home-office-portrait,77.2,262.8,60.0,0.1544,-1
+mokhi_office,505.0,497.4,15.6,0.9958,-1
+room2,444.9,363.2,61.4,0.8533,-1
+test2,629.1,451.4,106.3,0.7029,-1

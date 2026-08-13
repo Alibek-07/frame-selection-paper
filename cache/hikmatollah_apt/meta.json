@@ -1,0 +1,9 @@
+{
+  "video": "data/hikmatollah_apt.MOV",
+  "pool_size": 200,
+  "yaw_stride": 3,
+  "raw_yaw_span_rad": 9.349722957843838,
+  "yaw_normalised": false,
+  "nominal_hfov_deg": 65.0,
+  "angular_velocity_var": 0.0021613707864385264
+}
